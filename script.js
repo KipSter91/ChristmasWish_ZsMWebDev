@@ -32,3 +32,6 @@ let snowfall = new Snowfall({
   color: "#ffffff", // color of a snowflake in HEX format
   zIndex: "-1", // z-index for the snowflakes canvas
 });
+
+const currentYear = new Date().getFullYear()
+document.getElementById('year').textContent = currentYear;

@@ -13,8 +13,11 @@ body {
 }
 
 .header {
-  color: #00835b;
-  background-color: #fff7e2;
+  color: #ffffff;
+  background: linear-gradient(150deg, #df2e38, #eb455f, #21bf73, #557c55);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   font-size: x-large;
   width: 100%;
   position: absolute;
@@ -22,21 +25,25 @@ body {
 }
 
 .xmas {
+  padding: 1rem;
   font-size: xx-large;
   color: #ca244c;
-}
-
-.xmas h1 {
-  padding: 2rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  border-color: #21bf73;
+  border-style: solid;
+  border-radius: 50px;
 }
 
 .footer {
-  color: #00835b;
+  color: #ffffff;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: row;
-  background-color: #fff7e2;
+  background: linear-gradient(150deg, #df2e38, #eb455f, #21bf73, #557c55);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   font-size: large;
   width: 100%;
   position: absolute;
@@ -46,4 +53,16 @@ body {
 .elements {
   padding: 1rem;
   height: 2rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
