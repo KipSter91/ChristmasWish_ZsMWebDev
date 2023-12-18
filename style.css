@@ -1,27 +1,32 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap");
 
+/* Base styles for larger screens */
 body {
   font-family: "Mountains of Christmas", cursive;
   text-align: center;
   background-color: #dab86e;
   display: flex;
   flex-direction: column;
-  min-height: 90vh; /* Ensure the body takes at least the full viewport height. */
-  justify-content: center; /* Center vertically. */
-  align-items: center; /* Center horizontally. */
-  margin: 0; /* Remove default margin. */
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
-.header {
+.header, .footer {
   color: #ffffff;
   background: linear-gradient(150deg, #df2e38, #eb455f, #21bf73, #557c55);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  font-size: x-large;
   width: 100%;
   position: absolute;
-  top: 0; /* Keep the footer at the top. */
+}
+
+.header {
+  font-size: x-large;
+  top: 0;
 }
 
 .xmas {
@@ -35,19 +40,12 @@ body {
 }
 
 .footer {
-  color: #ffffff;
-  justify-content: center;
-  align-items: center;
+  font-size: large;
+  bottom: 0;
   display: flex;
   flex-direction: row;
-  background: linear-gradient(150deg, #df2e38, #eb455f, #21bf73, #557c55);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  font-size: large;
-  width: 100%;
-  position: absolute;
-  bottom: 0; /* Keep the footer at the bottom. */
+  justify-content: center;
+  align-items: center;
 }
 
 .elements {
@@ -64,5 +62,20 @@ body {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .xmas {
+    font-size: 24px; 
+  }
+
+  .footer {
+    font-size: 14px; 
   }
 }
