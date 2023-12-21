@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap");
 
 /* Base styles for larger screens */
@@ -12,10 +11,10 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
-.header, .footer {
+#wishes {
   color: #ffffff;
   background: linear-gradient(150deg, #df2e38, #eb455f, #21bf73, #557c55);
   background-size: 400% 400%;
@@ -23,9 +22,6 @@ body {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   width: 100%;
   position: absolute;
-}
-
-.header {
   font-size: x-large;
   top: 0;
 }
@@ -40,7 +36,14 @@ body {
   border-radius: 50px;
 }
 
-.footer {
+#footer {
+  color: #ffffff;
+  background: linear-gradient(150deg, #df2e38, #eb455f, #21bf73, #557c55);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: absolute;
   font-size: large;
   bottom: 0;
   display: flex;
@@ -73,10 +76,10 @@ body {
   }
 
   .xmas {
-    font-size: 24px; 
+    font-size: 24px;
   }
 
   .footer {
-    font-size: 14px; 
+    font-size: 14px;
   }
 }
